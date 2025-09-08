@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interactive Web Page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Welcome to the Interactive Web Page!</h1>
+
+  <!-- Theme Toggle -->
+  <button id="themeToggle">Toggle Light/Dark Mode</button>
+
+  <!-- Counter -->
+  <div id="counterSection">
+    <h2>Click Counter</h2>
+    <p>Count: <span id="count">0</span></p>
+    <button id="incrementBtn">Increment</button>
+  </div>
+
+  <!-- FAQ Section -->
+  <div id="faq">
+    <h2>FAQ</h2>
+    <div class="faq-item">
+      <h3 class="question">What is this page?</h3>
+      <p class="answer hidden">This is a demo of JavaScript interactivity!</p>
+    </div>
+    <div class="faq-item">
+      <h3 class="question">How does it work?</h3>
+      <p class="answer hidden">By using DOM events and manipulation.</p>
+    </div>
+  </div>
+
+  <!-- Form -->
+  <form id="signupForm" novalidate>
+    <h2>Sign Up</h2>
+    <label>Name: <input type="text" id="name" /></label><br />
+    <label>Email: <input type="text" id="email" /></label><br />
+    <label>Password: <input type="password" id="password" /></label><br />
+    <button type="submit">Submit</button>
+    <div id="formMessages"></div>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
